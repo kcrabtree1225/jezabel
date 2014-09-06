@@ -19,9 +19,3 @@ Goals for phase 1 (completed in 2 weeks) - an endless fully functioning stage wi
 // Idea Box //
 
 * Ally has a ‘vengeance’ attribute (0-100) that represents their percent chance to come back to avenge their death in the next round,   complete with their weapons (how much health, full?)
-
-<<<<<<< HEAD
-* Test push
-=======
-* A.I. controlled equipment, such as turrets.
->>>>>>> dh-first-branch
