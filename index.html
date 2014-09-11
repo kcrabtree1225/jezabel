@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>Seizure Zombies Unleashed</title>
+	<!-- integrate Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 	<style type="text/css">
 		html,body {
 			background-color: #333;
@@ -27,8 +30,32 @@
 	<script type="text/javascript" src="lib/game/main.js"></script>
 </head>
 <body>
+	<!-- grab jQuery from the interwebs-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="bootstrapjs/bootstrap.min.js"></script>
 	<canvas id="canvas"></canvas>
 	<strong style='margin-left:1em'>Zombie Spawning: </strong><p id='zombieSpawn' style='display:inline-block'></p><br/>
 	<strong style='margin-left:1em'>Active Zombies: </strong><p id='zombieCount' style='display:inline-block'></p>
+
+	<div id="health_container">
+	<strong>Health</strong>
+		<div class="progress" style="width: 200px;">
+		  	<div class="progress-bar" id="health-bar"
+		  		 role="progressbar" aria-valuenow="60" 
+		  		 aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+		    <!-- <span class="sr-only">50% Complete</span> -->
+		  	</div>
+		</div>
+	</div>
+
+	<div id="armor_container">
+	<strong>Armor</strong>
+		<div class="progress" style="width: 200px;">
+		  	<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20px;">
+		    <!-- <span class="sr-only">50% Complete</span> -->
+		  	</div>
+		</div>
+	</div>
+
 </body>
 </html>
