@@ -47,9 +47,9 @@
 
 		#weapon_container {
 			position: absolute;
-			left: 255px;
+			left: 287px;
 			/*right: 0;*/
-			top: 630px;
+			top: 645px;
 			/*bottom: 0;
 			margin: auto;*/
 			/*cursor: url('media/crosshair.png'), auto;*/
@@ -72,8 +72,8 @@
 		<div class="progress" style="width: 200px;">
 		  	<div class="progress-bar progress-bar-danger" id="health-bar"
 		  		 role="progressbar" aria-valuenow="60" 
-		  		 aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-		    <!-- <span class="sr-only">50% Complete</span> -->
+		  		 aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+		  
 		  	</div>
 		</div>
 	</div>
@@ -81,13 +81,16 @@
 	<div id="armor_container">
 	<strong>Armor</strong>
 		<div class="progress" style="width: 200px;">
-		  	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20px;">
-		    <!-- <span class="sr-only">50% Complete</span> -->
+		  	<div class="progress-bar progress-bar-success" id="armor-bar"
+		  	     role="progressbar" aria-valuenow="60" 
+		  	     aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 		  	</div>
 		</div>
 	</div>
 	<div id="weapon_container">
-		<img src="media/pistol.png">
+		<strong>Weapon</strong>
+		<img style="display:block" src="media/pistol.png">
 	</div>
+</div>
 </body>
 </html>
