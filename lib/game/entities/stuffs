@@ -1,0 +1,27 @@
+ig.module(
+ 'game.entities.stuffs'
+)
+.requires(
+ 'impact.stuffs'
+)
+.defines(function(){
+EntityStuffs = ig.Entity.extend({
+
+	timer : new ig.Timer(),
+	random : Math.floor(Math.random() * (7 - -3)) + -3,
+
+		init: function( x, y, settings ) {
+
+			this.parent( x, y, settings );
+			
+		},
+
+		update: function() {
+
+			this.parent(x,y);
+		},
+
+		spreadOut: function() {
+
+			
+		}
