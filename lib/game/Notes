@@ -1,0 +1,13 @@
+Notes to avoid conflicts :
+
+If you would please replace the spawnEnemy function in main.js with this before doing your next pull-request. This should avoid conflict.
+
+
+spawnEnemy: function() {
+
+		spawnGate = Math.floor(Math.random() * (4 - 0)) + 0;
+
+		this.getCoords();
+		enemies.push(ig.game.spawnEntity( EntityEnemy, this.xPos, this.yPos, {name: enemies.length} ));
+		
+	},
